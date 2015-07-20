@@ -30,15 +30,15 @@ alias pg='ps -Af | grep $1'         # requires an argument (note: /usr/bin/pg is
 
 # privileged access
 if [ $UID -ne 0 ]; then
-    alias sudo='sudo '
-    alias scat='sudo cat'
-    alias svim='sudo vim'
-    alias root='sudo su'
-    alias reboot='sudo systemctl reboot'
-    alias poweroff='sudo systemctl poweroff'
-    alias update='sudo pacman -Su'
-    alias netcfg='sudo netcfg2'
-    alias vi='vim'
+alias sudo='sudo '
+alias scat='sudo cat'
+alias svim='sudo vim'
+alias root='sudo su'
+alias reboot='sudo systemctl reboot'
+alias poweroff='sudo systemctl poweroff'
+alias update='sudo pacman -Su'
+alias netcfg='sudo netcfg2'
+alias vi='vim'
 fi
 
 # ls
