@@ -8,20 +8,6 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
 export LC_CTYPE=en_US.UTF-8
-#!/usr/bin/env bash
-#sleep 100
-xsetroot -solid black &
-#启动屏保程序
-gnome-screensaver &
-#启用gnome的主题，否则你的awesome下的gnome程序会非常难看
-gnome-settings-daemon &    
-#电源管理程序
-gnome-power-manager &      
-#网络管理程序
-#nm-applet &                           
-#自动更新程序
-#update-notifier &                    
-
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -34,12 +20,6 @@ exec i3
 
 if [ -f $sysresources ]; then
 
-
-
-
-
-
-
     xrdb -merge $sysresources
 
 fi
@@ -49,12 +29,6 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-
-
-
-
-
-
 
     xrdb -merge "$userresources"
 
