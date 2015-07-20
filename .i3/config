@@ -175,5 +175,3 @@ bar {
 
 #feh wallpaper exec feh --bg-scale /path/to/image.file or "--bg-tile FILE --bg-center FILE --bg-seamless FILE"
 exec --no-startup-id feh --bg-scale /home/mexjb/2.jpg
-
-
